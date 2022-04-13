@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(/login.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+    font-family: sans-serif;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-background {
+    background: transparent;
+    box-shadow: 1px 2px 40px 5px rgba(0, 0, 0, 0.8);
+    width: 320px;
+    height: 450px;
+    border-radius: 8px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px;
+}
+
+#logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#logo h4 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#logo h4 a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+}
+.email{
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid rgb(221, 215, 215);
+    outline: none;
+    padding: 10px 15px;
+    width: 80%;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+.password{
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid rgb(221, 215, 215);
+    outline: none;
+    padding: 10px 15px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.email::placeholder {
+    color: rgb(221, 215, 215);
+    font-size: 15px;
+}
+
+.password::placeholder {
+    color: rgb(221, 215, 215);
+    font-size: 15px;
+}
+
+.username::placeholder {
+    color: rgb(221, 215, 215);
+    font-size: 15px;
+}
+
+.Cpassword::placeholder {
+    color: rgb(221, 215, 215);
+    font-size: 15px;
+}
+
+.confirmation {
+    display: flex;
+}
+
+.confirmation p {
+    color: rgb(240, 222, 222);
+    margin-left: 10px;
+}
+
+.register {
+    text-align: center;
+}
+
+.register a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(72, 235, 72);
+    padding: 10px 45px;
+    border-radius: 30px;
+    font-weight: 600;
+    width: 900px;
+    transition: 0.3s;
+}
+
+.register a:hover {
+    background-color: rgb(26, 141, 26);
+}
+
+@media (max-width:360px) {
+    body {
+        background-image: url(/login.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 120vh;
+        backdrop-filter: blur(2px);
+        font-family: sans-serif;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .form-background {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 10px 20px;
+        box-shadow: 1px 2px 40px 5px rgba(0, 0, 0, 0.8);
+        background: transparent;
+        position: absolute;
+        border-radius: 8px;
+        width: 250px;
+        height: 450px;
+        margin: auto;
+       
+    }
+
+    #logo h4 a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+    #logo h4 {
+        margin-left: 14px;
+        margin-top: 20px;
+    }
+
+    .password,
+    .email{
+        background: transparent;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid rgb(221, 215, 215);
+        outline: none;
+        padding: 10px 15px;
+        width: 75%;
+        margin-bottom: 20px;
+    }
+    .email::placeholder {
+        color: rgb(221, 215, 215);
+        font-size: 13px;
+    }
+    
+    .password::placeholder {
+        color: rgb(221, 215, 215);
+        font-size: 13px;
+    }
+    .register a {
+        color: white;
+        text-decoration: none;
+        background-color: rgb(72, 235, 72);
+        padding: 10px 35px;
+        border-radius: 30px;
+        font-weight: 600;
+        width: 600px;
+        transition: 0.3s;
+    }
+    .confirmation p {
+        color: rgb(240, 222, 222);
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    
+}
